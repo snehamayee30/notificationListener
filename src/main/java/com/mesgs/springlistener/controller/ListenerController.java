@@ -67,7 +67,7 @@ public class ListenerController {
 		MimeMessage mimeMessage = mailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
         helper.setText(htmlContent,true);
-		emailService.sendSimpleMail(new EmailDetails("samantaray.snehamayee@gmail.com",htmlContent,"Order Confirmation Notification")); 
+		emailService.sendSimpleMail(new EmailDetails("snehamayees@kpmg.com",htmlContent,"Order Confirmation Notification")); 
 		LOGGER.info("Email Sent Successfully!!!");
 	}
 	
